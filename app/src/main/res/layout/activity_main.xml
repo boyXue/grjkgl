@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_page">
+
+    <RelativeLayout style="@style/topbar_bg">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/topbar_title"
+            android:layout_centerHorizontal="true"
+            android:text="农产品在线商城"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/yh"
+            style="@style/topbar_right_btn"
+            android:layout_width="50dp"
+            android:src="@mipmap/yh" />
+    </RelativeLayout>
+
+    <View style="@style/divider_horizontal_1dp"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/dd"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:src="@mipmap/dd" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+    </RelativeLayout>
+
+</LinearLayout>

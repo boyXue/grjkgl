@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <RelativeLayout
+       style="@style/topbar_bg">
+       <TextView
+           style="@style/topbar_title"
+           android:text="用户注册"
+           android:textColor="#333333"/>
+   </RelativeLayout>
+
+<View
+    style="@style/divider_horizontal_1dp"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"></LinearLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/lll"
+        android:id="@+id/head"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/yuanjiao"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:hint="用户名"
+            android:paddingLeft="5dp"
+            android:textColor="#333333"
+            android:textColorHint="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#333333" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#00000000"
+            android:inputType="textPassword"
+            android:gravity="center_vertical"
+            android:hint="密码"
+            android:paddingLeft="5dp"
+            android:textColor="#333333"
+            android:textColorHint="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#333333" />
+
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:hint="昵称"
+            android:paddingLeft="5dp"
+            android:textColor="#333333"
+            android:textColorHint="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#333333" />
+        <EditText
+            android:id="@+id/tel"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:hint="联系电话"
+            android:paddingLeft="5dp"
+            android:textColor="#333333"
+            android:textColorHint="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#333333" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/reg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@color/topbar_bg"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

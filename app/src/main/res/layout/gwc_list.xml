@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_page">
+
+    <RelativeLayout style="@style/topbar_bg">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/topbar_title"
+            android:layout_centerHorizontal="true"
+            android:text="我的购物车"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/js"
+            style="@style/topbar_right_img"
+            android:text="预定"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View style="@style/divider_horizontal_1dp"></View>
+
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></ListView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:id="@+id/zong"
+        android:text="1"
+        android:textSize="22sp"
+        android:textColor="@color/topbar_bg"/>
+</LinearLayout>

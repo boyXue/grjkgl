@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/activity_page"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    style="@style/topbar_bg">
+    <TextView
+        style="@style/topbar_title"
+        android:text="产品详情"/>
+</RelativeLayout>
+</LinearLayout>

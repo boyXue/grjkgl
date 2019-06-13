@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/activity_page">
+
+    <RelativeLayout style="@style/topbar_bg">
+
+        <TextView
+            style="@style/topbar_title"
+            android:text="发布"
+            android:textSize="13sp" />
+        <TextView
+            style="@style/topbar_right_img"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:id="@+id/add"/>
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout style="@style/edit_item">
+
+            <TextView
+                android:textSize="12sp"
+                style="@style/edit_item_left_tv"
+                android:text="标题:" />
+
+            <EditText
+                android:id="@+id/title"
+                style="@style/edit_item_right_et"
+                android:layout_weight="1"
+                android:maxLength="90"
+                android:textColorHint="#eaeaea"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/divider_horizontal_1dp"></View>
+        <LinearLayout style="@style/edit_item"
+            android:minHeight="150dp"
+            android:layout_height="150dp">
+
+            <TextView
+                android:textSize="12sp"
+                style="@style/edit_item_left_tv"
+                android:text="正文:" />
+
+            <EditText
+                android:singleLine="false"
+                android:id="@+id/msg"
+                style="@style/edit_item_right_et"
+                android:layout_weight="1"
+                android:textColorHint="#eaeaea"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/divider_horizontal_1dp"></View>
+
+
+
+        <View
+            style="@style/divider_horizontal_1dp"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="添加图片"
+                android:id="@+id/addpic"
+                android:background="@color/topbar_bg"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"></ListView>
+    </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>
