@@ -139,6 +139,7 @@ public class frag_sy extends BaseFragment {
         getlist();
     }
 
+
     @Override
     public void initData() {
 
